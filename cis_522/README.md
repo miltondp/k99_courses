@@ -4,8 +4,14 @@
   ```bash
   conda create -n cis522
   conda activate cis522
+
+  # with cuda:
   conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
   conda install ipython -c nvidia
+
+  # CPU only:
+  conda install pytorch torchvision torchaudio cpuonly -c pytorch
+  conda install ipython -c pytorch
   ```
 
 * Quickstart: https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
