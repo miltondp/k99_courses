@@ -5,3 +5,7 @@
   * My private fork is [here](https://github.com/miltondp/homework).
   * TODO: add the upstream repo URL
   
+  
+* For homework:
+  * use np.clip in case the gradient keeps changing.
+  * use numpy.linalg.pinv for the close formed solution
