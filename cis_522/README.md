@@ -1,5 +1,9 @@
 # CIS-522
 
+
+## PyTorch
+
+### Installation
 * Install PyTorch: https://pytorch.org/get-started/locally/
   ```bash
   conda create -n cis522
@@ -14,12 +18,14 @@
   conda install ipython -c pytorch
   ```
 
+### Quickstart
 * Quickstart: https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
   * I ran all the code until "Creating Models" section, where I verified that it is using CUDA as a device.
   * I also trained a model and it worked, with 64% accuracy.
   * I made some predictions also.
   * TODO: I did all the previous very quickly just to verify everything works. I need to go back and understand the code now.
 
+### Introduction to PyTorch
 * Continue with the "Introduction to PyTorch":
   * Tensors
   * Dataset and Dataloader
