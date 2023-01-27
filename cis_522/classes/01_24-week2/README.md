@@ -25,3 +25,8 @@
     X^tXw = X^tY
     w = (X^tX)^-1 X^t Y
 
+
+### 01/27 (makeup pod)
+
+* TA: Ahmed Ahmed
+* The part of "crazy" scaling seems to be very important in DL.
