@@ -1,11 +1,12 @@
-## Week 3 - COMPLETE
+## Week 3 - Multi-Layer Perceptrons
 
 ### 01/31
 
-Questions prior to class:
-* Homework:
-  * Show the Leaderboard to see if anything is fine.
-  * What's the meaning of the output in the leaderboard (like MSE)?
-    * Should we change main.py also to use the gradient descent version?
+* Worked on first notebook
+* we saw the slides: https://github.com/CIS-522/course-content/blob/main/W03_MLP/CIS%20522-%20Live%20part%20week%203.pdf
+* exercise 3:
+
+b = - x_train[:-1]
+y_hat = max(0, x + b) * w
 
 ### 02/02
