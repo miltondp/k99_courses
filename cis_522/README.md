@@ -11,12 +11,17 @@
 
   # with cuda:
   conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
-  conda install ipython -c nvidia
-
   # CPU only:
-  conda install pytorch torchvision torchaudio cpuonly -c pytorch
-  conda install ipython -c pytorch
+  # conda install pytorch torchvision torchaudio cpuonly -c pytorch
+
+  conda install ipywidgets ipython numpy matplotlib jupyterlab -c pytorch
   ```
+
+Run JupyterLab:
+```bash
+jupyter lab --ip="127.0.0.1" --port="8888" --ContentsManager.allow_hidden=True --no-browser --ServerApp.token=""
+```
+
 
 ### Quickstart
 * Quickstart: https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html
