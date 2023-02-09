@@ -36,4 +36,6 @@ From W4D1:
 
 ### 02/09
 
-
+* Chernoff bound
+  * if you have larger batch sizes, errors are better? it's a mathematical derivation
+* Distillation is pretty good (Hainiu)
