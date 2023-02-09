@@ -39,3 +39,7 @@ From W4D1:
 * Chernoff bound
   * if you have larger batch sizes, errors are better? it's a mathematical derivation
 * Distillation is pretty good (Hainiu)
+* adversarial attacks
+  * each batch could shift a bit the loss landscape
+  * so the idea is that a small shift in input, our network can be fooled
+  * here the final loss funcion is, for example, cross entropy(perturbed output, predicted output) + || dL/dX ||2
