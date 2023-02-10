@@ -62,6 +62,37 @@ From W4D1:
     * this makes good initialization less important
     * the most common practice is to put the normalization in between the linear layers and activation functions
 
+Regularization:
+* key for deep learning
+* modern neural nets, with as many weights as data points, "should" overfit, but they don't
+  * deep learning often usese more parameters than observations
+* lowest test errors come from giant networks with lots of regularization
+  * best is combine different regularizations
+  * bias/variance trade off
+    * bias is training error
+    * variance is test error (roughly)
+* generalization and overfitting
+* GPT-3 (175B params trained on 500 billion words)
+  * it does not overfilt, but it memorizes
+
+* regularization is shrinkage, shrinkage is regularization
+* the smaller the weights in the model, the more you generalize
+* smaller weights underperform on the train, but can do very well on the teset set
+
+early stopping:
+  * this is one of the easiest ways to regularize
+  * initialize with small weights
+  * these weights get bigger and bigger as we do gradient descent
+  * so stop when they are the "optimal" size, that is, when validation accuracies do not increase over epochs
+  * but **it doesn't solve the problem of local variance** (i.e., accuracy can be very volatile between epochs)
+    * to overcome this, we also save the best model based on the val loss/accuracy for use on test data
+
+* dropout is another regularization techniques
+  * it sort of samples different networks
+  * and does a sort of ensembling of them
+  * adds lots of noise, but prevents overfitting
+  * enforces distributed representation
+
 ### 02/09
 
 * Chernoff bound
@@ -71,3 +102,22 @@ From W4D1:
   * each batch could shift a bit the loss landscape
   * so the idea is that a small shift in input, our network can be fooled
   * here the final loss funcion is, for example, cross entropy(perturbed output, predicted output) + || dL/dX ||2
+
+From W4D3:
+
+* Hyperparameter tuning is basically search
+  * so grid search for small parameters, taking smallest and largest values and their combinations
+* randomized search, just different random combinations
+* coordinate-wise gradient descent
+  * gradient descent in hyperparameters
+  * change them one at a time, accepting any changes that reduce testing error
+* Bayesian optimization / AutoML
+  * start with hyperparameters that worked well for similar problems
+
+regularization via SGD (builtin into SGD):
+* SGD does regularization
+* weights get bigger as one iterates
+* if we use early stopping it will avoid overfitting
+
+* small batch size <-> large learning rate
+* so increasing batch size is like decreasing the learning rate
