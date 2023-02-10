@@ -121,3 +121,19 @@ regularization via SGD (builtin into SGD):
 
 * small batch size <-> large learning rate
 * so increasing batch size is like decreasing the learning rate
+
+regularization by compressing; this can be done by:
+* distillation: dimensionality reduction
+* pruning: removing nodes
+* generally, start big, then compress, works better than starting small
+
+Distillation:
+* train a network: the teacher
+* apply the teacher to a big set of unlabeled data
+  * generates "soft labels" or estimated lables
+  * can include hidden node outputs (this are the internal features of the network)
+* then we use this to train a "student" network
+
+
+Adversarial attacks and defenses
+* 
