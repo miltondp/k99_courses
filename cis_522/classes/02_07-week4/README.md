@@ -136,4 +136,10 @@ Distillation:
 
 
 Adversarial attacks and defenses
-* 
+* for example, a network classifies an image as a cat, but with subtle changes, then the network thinkgs it's "guacamole"
+* the problem is that we are in a high dimensional space, where every point is close to all other points
+* can one defend against them? yes
+  * regularization "defensive distillation" (here soft labels help) or "feature squeezing"
+  * or pick weights to minimize the objective function that the adversary is trying to maximize (when searching for perturbations)
+  * so no small pertubation would fool the network
+  * it's making the weights more robust
