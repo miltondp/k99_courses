@@ -143,3 +143,42 @@ Adversarial attacks and defenses
   * or pick weights to minimize the objective function that the adversary is trying to maximize (when searching for perturbations)
   * so no small pertubation would fool the network
   * it's making the weights more robust
+
+
+### Optional notebook "Homework tips"
+
+* Learning rate matters
+* learning too fast (oscilates) vs learning to slowly (takes forever)
+* anneal/decay: start fast, then slow down
+* so we adjust the weights for each batch, the idea here is to adjust the learning rate
+  * we can use 1/t, or sqrt(t), etc, but with all of them **we are already fixing** how we will adjust them
+* gradients can become enormous: they could be clip (gradient clipping).
+* for Adagrad, we update *each* weight (w_i) at each time step (or epoch), although the text also says that in practice time step is a minibatch.
+* RMSprop:
+  * same idea as Adagrad, but running average instead of sum (in the denominator, or v_{t+1})
+  * it tries to fix the adagrad's aggressive, monotonically decreasing learning rate
+* Adam:
+  * similar to RMSprop, but with momentum added
+
+* natural gradients:
+  * "destructive interference": Neural nets, when trained on new data, tend to forget what they have already learned
+  * natural gradients try to address this
+  * the idea is to move in a gradient directoion that keeps prior learning intact
+  * instead of changing the parameter vector to at most move an epsilon distance, we constrain the output distribution of the model to be within an epsilon distance from the distribution on the previous step.
+  * We measure the distance between two distributions with Kullback-Leibler Divergence (KL) 
+  * it uses the fisher information matrix
+  * the problem is that they take a lot of memory (the inverse matrix is huge with high dimensions)
+  * adam approximates natural gradients
+
+* bias in ML:
+  * training data, how it is selected and labels are
+  * loss function selected
+* algorithmic fairness:
+  * two groups: protected class and the general population
+  * goals:
+    * same prediction accuracy in the two groups
+    * same false positive rate
+    * same percentage labeled "true"
+    * the protected calss label is not used in the prediction
+    * in general, these criteria are incompatible (so we need to select something, not everything; there are always trade offs)
+  * example of facebook ads targeting by race, age, sex, that was prohibited in 2019
