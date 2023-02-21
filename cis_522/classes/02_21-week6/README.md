@@ -12,3 +12,13 @@
   * we predict lambda, the parameter of the Poisson distribution
   * Hainiu said that this is a "Recognition network"
   * a cost function could be the Negative Log Likelihood (NLL)
+  * so the network predicts the parameters of a distribution (such as Poisson's lambda or Gaussians's mean and std), and then we use the NLL to compute the loss given the data and predicted parameters
+
+FID: cost function, Frechlet Inception Distance
+* difference for images?
+
+Cost function for different problems:
+* Classification: Cross entropy, L2-norm, Hinge loss, Gini index (class impurity)
+* Modeling distribution: Negative Log Likelihood
+* Reconstruction: ELBO (Evidence lower bound), Dice loss
+* Regression: MSE, MAE, Ridge, Lasso
