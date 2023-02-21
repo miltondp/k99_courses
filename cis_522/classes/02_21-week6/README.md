@@ -20,5 +20,8 @@ FID: cost function, Frechlet Inception Distance
 Cost function for different problems:
 * Classification: Cross entropy, L2-norm, Hinge loss, Gini index (class impurity)
 * Modeling distribution: Negative Log Likelihood
-* Reconstruction: ELBO (Evidence lower bound), Dice loss
+* Reconstruction: ELBO (Evidence lower bound), Dice loss, FID (Frechlet Inception Distance)
 * Regression: MSE, MAE, Ridge, Lasso
+
+We discussed projects
+* Chain-of-thought: related to prompt engineering
