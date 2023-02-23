@@ -25,3 +25,29 @@ Cost function for different problems:
 
 We discussed projects
 * Chain-of-thought: related to prompt engineering
+
+
+### 02/23
+
+Today we'll discuss about projects (the presented a slide)
+* The text is here: https://edstem.org/us/courses/33082/discussion/2649635
+* there they link this [What is a good project?](https://docs.google.com/presentation/d/1rFfe0P6cZ509FMeflPbFvOvBiBodwxPWb-8hQr9kwPQ/edit?usp=sharing)
+* I downloaded the slides they presented into this folder
+
+What makes a good DL class project?
+* it has to be managenable
+* we don't have to use the entire dataset, I can sample it
+  * they are mentioning this because you cannot work on Google Collab with this
+* you will almost always start with a pre-trained models that others trained on big data
+  * this is interesting, maybe, for the VAE on gene expression data
+  * huggingface is a resource to download pre-trained models
+* https://60years.vizh.ub.ai -> map/grahp of research in AI, interesting
+* you need to have a good question:
+  * it must be possible to answer it
+* **Neural match**:
+  * https://deeplearning.neuromatch.io:
+    * most of the material here is overlapped with the course
+    * so if there is a something that we don't know (like VAEs), we can take a look here
+  * suggested by one TA
+  * it's a coding camp
+  * 
