@@ -50,4 +50,13 @@ What makes a good DL class project?
     * so if there is a something that we don't know (like VAEs), we can take a look here
   * suggested by one TA
   * it's a coding camp
-  * 
+* good questions:
+  * must be a question
+  * must have an answer
+  * answer must be useful
+  * answer must come from data
+  * DL must be useful to answer question
+  * You must be able to pull it off
+  * must not be unethical
+  * question should not already be answered
+* "Shoe Leather" approach to data science ?
