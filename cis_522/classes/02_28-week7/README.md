@@ -14,3 +14,8 @@ ResNets by Hainiu:
 * the input is repeated in the output of layers to learn the residuals:
     * (from Hainiu) CrossEntropy(y_hat, y), where y_hat = X + fw(X) (this last term is sort of the residuals)
 
+
+Transfer learning:
+* fine tunning
+* training the classification layer (last one)
+* training from scratch
