@@ -60,3 +60,6 @@ What makes a good DL class project?
   * must not be unethical
   * question should not already be answered
 * "Shoe Leather" approach to data science ?
+
+
+Today we are having some fun with adversarial attacks with images
