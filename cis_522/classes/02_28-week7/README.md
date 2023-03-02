@@ -19,3 +19,12 @@ Transfer learning:
 * fine tunning
 * training the classification layer (last one)
 * training from scratch
+
+
+### 03/02
+
+Second notebook
+
+* VAE: ready about "variational inference"
+    * transforming from stochastic to deterministic
+    
